@@ -4,7 +4,7 @@ import { Moneda } from './moneda';
 /**
  * Libreria de utilidades Javascript
  */
-export const utility = {
+export  const utility = {
     Moneda,
     Numero
 }
