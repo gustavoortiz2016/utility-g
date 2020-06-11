@@ -7,6 +7,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "npm run clear && tsc -w",
+    "compodoc": "npx compodoc -p ./tsconfig.doc.json",
     "clear": "rm -r -f dist/*.*",
     "build": "npm run clear && tsc",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/gustavoortiz2016/utility-g#readme",
   "dependencies": {},
   "devDependencies": {
+    "@compodoc/compodoc": "^1.1.11",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "chai": "^4.2.0",
