@@ -1,3 +1,6 @@
+/**
+ * Funciones relacionadas a Monedas
+ */
 export declare const Moneda: {
     /**
      * Funcion para formatear un string

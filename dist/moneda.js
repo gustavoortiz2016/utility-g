@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Moneda = void 0;
+/**
+ * Funciones relacionadas a Monedas
+ */
 exports.Moneda = {
     /**
      * Funcion para formatear un string

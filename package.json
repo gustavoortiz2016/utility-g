@@ -5,10 +5,11 @@
   "main": "./dist/index.js",
   "type": "./dist/index.d.js",
   "scripts": {
-    "test": "mocha --require ts-node/register test/**/*.ts",
+    "test": "mocha",
     "dev": "npm run clear && tsc -w",
     "clear": "rm -r -f dist/*.*",
-    "build":"npm run clear && tsc"
+    "build": "npm run clear && tsc",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "istanbul": "^0.4.5",
     "mocha": "^8.0.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"

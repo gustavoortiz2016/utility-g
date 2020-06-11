@@ -1,1 +1,1 @@
-{"version":3,"file":"moneda.d.ts","sourceRoot":"","sources":["../src/moneda.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,MAAM;IACf;;;;;;;;OAQG;wBACiB,MAAM,mEAAyC,MAAM;CAU5E,CAAA"}
+{"version":3,"file":"moneda.d.ts","sourceRoot":"","sources":["../src/moneda.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,eAAO,MAAM,MAAM;IACf;;;;;;;;OAQG;wBACiB,MAAM,mEAAyC,MAAM;CAU5E,CAAA"}
