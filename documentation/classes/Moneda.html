@@ -67,17 +67,12 @@
                 <h3>Description</h3>
             </p>
             <p class="comment">
-                <p>Grupo de funciones relacionadas al manejo de números Monedas</p>
+                <p>Grupo de funciones relacionadas al manejo de Monedas</p>
 
             </p>
 
 
 
-            <p class="comment">
-                <h3>Example</h3>
-            </p>
-            <div class="io-description">
-            </div>
 
             <section>
     <h3 id="index">Index</h3>
@@ -134,7 +129,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/moneda.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/moneda.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -213,15 +208,17 @@ strFormatoMoneda(&#39;10&#39;,&#39;$&#39;,2)</p>
     * strFormatoMoneda(&#x27;10&#x27;);
     * strFormatoMoneda(&#x27;10&#x27;,&#x27;$&#x27;,2)
     */
-    static convertirStr &#x3D; (str: string, simbolo?: string, decimales?: number) &#x3D;&gt; {
+    static convertirStr &#x3D; (str: string, simbolo?: string, decimales?: number):string &#x3D;&gt; {
         const ivalor: number &#x3D; Number(str);
+        let r: string &#x3D; &#x27;&#x27;;
         if (isNaN(ivalor))
-            throw &#x27;Valor invalido&#x27;;
+            r &#x3D; &#x27;Valor invalido&#x27;;
         if (!simbolo)
             simbolo &#x3D; &#x27;$&#x27;;
         if (!decimales)
             decimales &#x3D; 2;
-        return &#x60;${simbolo} ${ivalor.toFixed(decimales)}&#x60;;
+        r &#x3D; &#x60;${simbolo} ${ivalor.toFixed(decimales)}&#x60;;
+        return r;
     }
 }
 export default Moneda;</code></pre>

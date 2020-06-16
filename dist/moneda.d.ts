@@ -1,6 +1,5 @@
 /**
- * Grupo de funciones relacionadas al manejo de números Monedas
- * @class Moneda
+ * Grupo de funciones relacionadas al manejo de Monedas
  */
 declare class Moneda {
     /**

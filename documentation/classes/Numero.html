@@ -198,11 +198,12 @@
      * 10
      */
     static convertir &#x3D; (str: string): number &#x3D;&gt; {
+        let r: number &#x3D; 0;
         let valor: string &#x3D; str.replace(/\$|,/g, &#x27;&#x27;);
         if (valor) {
-            return parseInt(valor);
+            r &#x3D; parseInt(valor);
         }
-        return 0;
+        return r;
     }
 }
 

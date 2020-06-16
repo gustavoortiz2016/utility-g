@@ -27,7 +27,7 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content miscellaneous-variables">
+               <div class="content class">
                    <div class="content-data">
 
 
@@ -40,115 +40,122 @@
 
 
 
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>JSON</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/json.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#lf">lf</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lf"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            lf</b>
+                            <a href="#lf"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="2" class="link-to-prism">src/json.ts:2</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">class JSON {
+    static lf &#x3D; async (archivo: string): Promise&lt;any&gt; &#x3D;&gt; {
+        let f &#x3D; await fetch(archivo);
+        let r &#x3D; await f.json();
+        return r;
+    }
+}
+export default JSON;</code></pre>
+    </div>
+</div>
 
 
 
                    
 
-<ol class="breadcrumb">
-  <li>Miscellaneous</li>
-  <li>Variables</li>
-</ol>
-
-<section>
-    <h3 id="index">Index</h3>
-    <table class="table table-sm table-bordered index-table">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <ul class="index-list">
-                        <li>
-                            <a href="#GFormatoMap" title="src/globalizacion.ts"><b>GFormatoMap</b>&nbsp;&nbsp;&nbsp;(src/.../globalizacion.ts)</a>
-                        </li>
-                        <li>
-                            <a href="#utility" title="src/index.ts"><b>utility</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-    <h3>src/globalizacion.ts</h3>
-    <section>
-    <h3></h3>        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="GFormatoMap"></a>
-                        <span class="name">
-                            <b>
-                            GFormatoMap</b>
-                            <a href="#GFormatoMap"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="../interfaces/IGlobalizacion.html" target="_self" >Map&lt;string, IGlobalizacion&gt;</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>new Map()</code>
-                        </td>
-                    </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <div class="io-description"><p>Mapeo de las configuraciones de las regiones.</p>
-</div>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-</section>
-    <h3>src/index.ts</h3>
-    <section>
-    <h3></h3>        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="utility"></a>
-                        <span class="name">
-                            <b>
-                            utility</b>
-                            <a href="#utility"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>{
-    Globalizacion:GlobalizacionEnum.esSV,
-    Moneda,
-    Numero,
-    Cadena:function():Cadena{
-        return new Cadena(this.Globalizacion);
-    }
-}</code>
-                        </td>
-                    </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <div class="io-description"><p>Libreria de utilidades Javascript</p>
-</div>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-</section>
 
 
 
@@ -168,8 +175,8 @@
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
-            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'JSON.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

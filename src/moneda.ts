@@ -1,6 +1,5 @@
 /**
- * Grupo de funciones relacionadas al manejo de números Monedas
- * @class Moneda
+ * Grupo de funciones relacionadas al manejo de Monedas
  */
 class Moneda {
     /**
@@ -12,7 +11,7 @@ class Moneda {
     * strFormatoMoneda('10');
     * strFormatoMoneda('10','$',2)
     */
-    static convertirStr = (str: string, simbolo?: string, decimales?: number) => {
+    static convertirStr = (str: string, simbolo?: string, decimales?: number):string => {
         const ivalor: number = Number(str);
         let r: string = '';
         if (isNaN(ivalor))
