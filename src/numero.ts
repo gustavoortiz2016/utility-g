@@ -1,7 +1,9 @@
+
 /**
- * Funciones relacionadas a numero
+ *Grupo de funciones relacionadas al manejo de números
+ * @class Numero
  */
-export const Numero={
+class Numero {
     /**
      * Elimina los caracteres $ y , retornando un valor numerico
      * @param str Valor a evaluar
@@ -10,11 +12,13 @@ export const Numero={
      * @returns
      * 10
      */
-    convertir:(str:string):number=>{
-        let valor:string = str.replace(/\$|,/g,'');
-        if(valor){
+    static convertir = (str: string): number => {
+        let valor: string = str.replace(/\$|,/g, '');
+        if (valor) {
             return parseInt(valor);
         }
         return 0;
     }
 }
+
+export default Numero;

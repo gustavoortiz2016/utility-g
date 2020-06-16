@@ -1,10 +1,10 @@
-import { Numero } from './numero';
-import { Moneda } from './moneda';
+import Numero from './numero';
+import Moneda from './moneda';
 
 /**
  * Libreria de utilidades Javascript
  */
-export  const utility = {
+export const utility = {
     Moneda,
     Numero
 }

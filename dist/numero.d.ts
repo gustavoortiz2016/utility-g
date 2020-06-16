@@ -1,7 +1,8 @@
 /**
- * Funciones relacionadas a numero
+ *Grupo de funciones relacionadas al manejo de números
+ * @class Numero
  */
-export declare const Numero: {
+declare class Numero {
     /**
      * Elimina los caracteres $ y , retornando un valor numerico
      * @param str Valor a evaluar
@@ -10,6 +11,7 @@ export declare const Numero: {
      * @returns
      * 10
      */
-    convertir: (str: string) => number;
-};
+    static convertir: (str: string) => number;
+}
+export default Numero;
 //# sourceMappingURL=numero.d.ts.map

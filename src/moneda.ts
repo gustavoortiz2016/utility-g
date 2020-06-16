@@ -1,17 +1,18 @@
 /**
- * Funciones relacionadas a Monedas
+ * Grupo de funciones relacionadas al manejo de números Monedas
+ * @class Moneda
  */
-export const Moneda = {
+class Moneda {
     /**
-     * Funcion para formatear un string
-     * @param str Valor a formatear
-     * @param simbolo Simbolo a mostrar
-     * @param decimales Cantidad de decimales
-     * @example
-     * strFormatoMoneda('10');
-     * strFormatoMoneda('10','$',2)
-     */
-    convertirStr: (str: string, simbolo?: string, decimales?: number): string => {
+    * Funcion para formatear un string
+    * @param str Valor a formatear
+    * @param simbolo Simbolo a mostrar
+    * @param decimales Cantidad de decimales
+    * @example
+    * strFormatoMoneda('10');
+    * strFormatoMoneda('10','$',2)
+    */
+    static convertirStr = (str: string, simbolo?: string, decimales?: number) => {
         const ivalor: number = Number(str);
         if (isNaN(ivalor))
             throw 'Valor invalido';
@@ -22,3 +23,4 @@ export const Moneda = {
         return `${simbolo} ${ivalor.toFixed(decimales)}`;
     }
 }
+export default Moneda;
