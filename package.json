@@ -1,6 +1,6 @@
 {
   "name": "utility-g",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Libreria de utilidades Javascript",
   "main": "./dist/index.js",
   "type": "./dist/index.d.js",
