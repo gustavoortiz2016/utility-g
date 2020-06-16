@@ -15,11 +15,12 @@ class Numero {
  * 10
  */
 Numero.convertir = (str) => {
+    let r = 0;
     let valor = str.replace(/\$|,/g, '');
     if (valor) {
-        return parseInt(valor);
+        r = parseInt(valor);
     }
-    return 0;
+    return r;
 };
 exports.default = Numero;
 //# sourceMappingURL=numero.js.map

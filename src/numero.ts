@@ -13,11 +13,12 @@ class Numero {
      * 10
      */
     static convertir = (str: string): number => {
+        let r: number = 0;
         let valor: string = str.replace(/\$|,/g, '');
         if (valor) {
-            return parseInt(valor);
+            r = parseInt(valor);
         }
-        return 0;
+        return r;
     }
 }
 

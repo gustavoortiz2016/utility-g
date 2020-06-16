@@ -17,13 +17,15 @@ class Moneda {
 */
 Moneda.convertirStr = (str, simbolo, decimales) => {
     const ivalor = Number(str);
+    let r = '';
     if (isNaN(ivalor))
-        throw 'Valor invalido';
+        r = 'Valor invalido';
     if (!simbolo)
         simbolo = '$';
     if (!decimales)
         decimales = 2;
-    return `${simbolo} ${ivalor.toFixed(decimales)}`;
+    r = `${simbolo} ${ivalor.toFixed(decimales)}`;
+    return r;
 };
 exports.default = Moneda;
 //# sourceMappingURL=moneda.js.map

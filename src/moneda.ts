@@ -14,13 +14,15 @@ class Moneda {
     */
     static convertirStr = (str: string, simbolo?: string, decimales?: number) => {
         const ivalor: number = Number(str);
+        let r: string = '';
         if (isNaN(ivalor))
-            throw 'Valor invalido';
+            r = 'Valor invalido';
         if (!simbolo)
             simbolo = '$';
         if (!decimales)
             decimales = 2;
-        return `${simbolo} ${ivalor.toFixed(decimales)}`;
+        r = `${simbolo} ${ivalor.toFixed(decimales)}`;
+        return r;
     }
 }
 export default Moneda;
