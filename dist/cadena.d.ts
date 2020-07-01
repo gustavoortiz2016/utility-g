@@ -17,6 +17,11 @@ declare class Cadena {
      * @memberof Cadena
      */
     private _formato;
+    /**
+     *Crea una instancia de Cadena
+     * @param {GlobalizacionEnum} region
+     * @memberof Cadena
+     */
     constructor(region: GlobalizacionEnum);
     /**
      * Formato documento de identificación,Este formato varia dependiendo la región seleccionada

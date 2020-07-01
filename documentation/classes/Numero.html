@@ -201,7 +201,7 @@
         let r: number &#x3D; 0;
         let valor: string &#x3D; str.replace(/\$|,/g, &#x27;&#x27;);
         if (valor) {
-            r &#x3D; parseInt(valor);
+            r &#x3D; parseFloat(valor);
         }
         return r;
     }

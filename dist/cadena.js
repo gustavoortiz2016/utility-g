@@ -5,6 +5,11 @@ const globalizacion_1 = require("./globalizacion");
  * Grupo de funciones relacionadas al manejo de cadenas
  */
 class Cadena {
+    /**
+     *Crea una instancia de Cadena
+     * @param {GlobalizacionEnum} region
+     * @memberof Cadena
+     */
     constructor(region) {
         this._region = region;
         this._formato = globalizacion_1.GFormatoMap.get(this._region);

@@ -18,7 +18,7 @@ Numero.convertir = (str) => {
     let r = 0;
     let valor = str.replace(/\$|,/g, '');
     if (valor) {
-        r = parseInt(valor);
+        r = parseFloat(valor);
     }
     return r;
 };
