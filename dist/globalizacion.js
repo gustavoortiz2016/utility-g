@@ -6,6 +6,9 @@ exports.GFormatoMap = void 0;
  */
 var GlobalizacionEnum;
 (function (GlobalizacionEnum) {
+    /**
+     *Configuración de El Salvador
+     */
     GlobalizacionEnum["esSV"] = "es-sv";
 })(GlobalizacionEnum || (GlobalizacionEnum = {}));
 /**

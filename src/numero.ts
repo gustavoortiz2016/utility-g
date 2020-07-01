@@ -16,7 +16,7 @@ class Numero {
         let r: number = 0;
         let valor: string = str.replace(/\$|,/g, '');
         if (valor) {
-            r = parseInt(valor);
+            r = parseFloat(valor);
         }
         return r;
     }
