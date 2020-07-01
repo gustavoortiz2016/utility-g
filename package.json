@@ -8,7 +8,7 @@
     "test": "npm run build && mocha",
     "dev": "npm run clear && tsc -w",
     "compodoc": "npx compodoc -p ./tsconfig.doc.json",
-    "clear": "rmdir /Q /S dist",
+    "clear": "rm -r -f dist/*.*",
     "build": "npm run clear && tsc",
     "cover": "npm run build && istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
   },
